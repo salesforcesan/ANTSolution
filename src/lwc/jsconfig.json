@@ -2,7 +2,26 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/hello": [
+                "hello/hello.js"
+            ],
+            "c/helloBinding": [
+                "helloBinding/helloBinding.js"
+            ],
+            "c/helloConditionalRendering": [
+                "helloConditionalRendering/helloConditionalRendering.js"
+            ],
+            "c/helloExpressions": [
+                "helloExpressions/helloExpressions.js"
+            ],
+            "c/helloForEach": [
+                "helloForEach/helloForEach.js"
+            ],
+            "c/helloIterator": [
+                "helloIterator/helloIterator.js"
+            ]
+        }
     },
     "include": [
         "**/*",
