@@ -422,3 +422,4 @@ WorkRewardHistory.object
 WorkRewardShare.object
 WorkThanks.object
 WorkThanksShare.object
+LightningComponentBundle.object

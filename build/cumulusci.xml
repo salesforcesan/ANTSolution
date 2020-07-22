@@ -382,6 +382,9 @@ project.setProperty("downgradePackage", result);
           	<case value="customPermissions">
               <property name="typename" value="CustomPermission" />
             </case>
+            <case value="LightningComponentBundle">
+              <property name="typename" value="LightningComponentBundle" />
+            </case>
            <default/>
           </switch>
 
