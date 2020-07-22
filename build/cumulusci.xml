@@ -289,6 +289,9 @@ project.setProperty("downgradePackage", result);
             <case value="aura">
               <property name="typename" value="AuraDefinitionBundle" />
             </case>
+            <case value="lwc">
+              <property name="typename" value="LightningComponentBundle" />
+            </case>
             <case value="classes">
               <property name="typename" value="ApexClass" />
             </case>
@@ -381,10 +384,7 @@ project.setProperty("downgradePackage", result);
             </case>
           	<case value="customPermissions">
               <property name="typename" value="CustomPermission" />
-            </case>
-            <case value="LightningComponentBundle">
-              <property name="typename" value="LightningComponentBundle" />
-            </case>
+            </case>            
            <default/>
           </switch>
 
