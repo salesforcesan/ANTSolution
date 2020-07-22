@@ -389,7 +389,6 @@
 			serverurl="${sf.serverurl}"
 			maxPoll="${sf.maxPoll}"
 			deployRoot="${user.dir}/src"
-			logType="${env.SF_LOGDETAIL}"
             ignoreWarnings="true"
 			runallTests="false" />
 	</target>
@@ -424,8 +423,9 @@
 			</catch>
 		</trycatch>
 
-		<!-- Deploy src directory -->
-		<antcall target="DeployWithoutTests" />
+		<!-- Deploy src directory 
+        <antcall target="DeployWithoutTests" />
+        -->
 
 		<!-- Delete any metadata from the org which is not in the repo -->
 		<antcall target="destroyStaleMetadata" />
@@ -725,9 +725,9 @@
 <!-- Deploy any unpackaged metadata bundles needed before the deployment -->
 <antcall target="deployUnpackagedPre" />
 <antcall target="updatePackageXml" />
-<!-- Deploy the src directory -->
+<!-- Deploy the src directory 
 <antcall target="DeployWithoutTests" />
-
+-->
 <if>
     <not><equals arg1="${cumulusci.unmanaged.destroy.mode}" arg2="full" /></not>
     <then>
@@ -775,9 +775,10 @@
     <!-- Prepare the managed version of the src directory -->
     <antcall target="createManagedSrc" />
     
-    <!-- Deploy src directory -->
+    <!-- Deploy src directory 
     <antcall target="DeployWithoutTests" />
-    
+    -->
+
     <!-- Revert the src directory -->
     <antcall target="revertManagedSrc" />
     
@@ -1088,9 +1089,9 @@
  <!-- Deploy any unpackaged metadata bundles needed before the deployment -->
  <antcall target="deployUnpackagedPre" />
  
- <!-- Deploy the src directory -->
+ <!-- Deploy the src directory 
  <antcall target="DeployWithoutTests" />
- 
+ -->
  <if>
      <not><equals arg1="${cumulusci.unmanaged.destroy.mode}" arg2="full" /></not>
      <then>
@@ -1143,9 +1144,9 @@
 <!-- Prepare the unmanaged EE version of the src directory -->
 <antcall target="createUnmanagedEESrc" />
 
-<!-- Deploy src directory -->
+<!-- Deploy src directory 
 <antcall target="DeployWithoutTests" />
-
+-->
 <!-- Revert the src directory -->
 <antcall target="revertUnmanagedEESrc" />
 
