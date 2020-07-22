@@ -459,8 +459,9 @@ project.setProperty("downgradePackage", result);
                             <else>
                               <if>
                                 <not>
-                                  <and><equals arg1="${typename}" arg2="AuraDefinitionBundle" />
-                                    <equals arg1="${typename}" arg2="LightningComponentBundle" /></and>
+                                  <or><equals arg1="${typename}" arg2="AuraDefinitionBundle" />
+                                    <equals arg1="${typename}" arg2="LightningComponentBundle" />
+                                  </or>
                                   
                                 </not>
                                 <then>
