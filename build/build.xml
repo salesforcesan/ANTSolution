@@ -224,8 +224,7 @@
 			password="${sf.password}"
 			serverurl="${sf.serverurl}"
 			maxPoll="${sf.maxPoll}"
-			deployRoot="${user.dir}/src"
-			logType="${env.SF_LOGDETAIL}"
+			deployRoot="${user.dir}/src"			
 			checkOnly="${sf.checkOnly}" />
 	</target>
 
@@ -244,8 +243,7 @@
 			password="${sf.password}"
 			serverurl="${sf.serverurl}"
 			maxPoll="${sf.maxPoll}"
-			deployRoot="${user.dir}/src"
-			logType="${env.SF_LOGDETAIL}"
+			deployRoot="${user.dir}/src"			
 			testLevel="${sf.testLevel}" />
     </target>
     
@@ -260,8 +258,7 @@
             password="${sf.tstpassword}"
             serverurl="${sf.tstserverurl}"
             maxPoll="${sf.maxPoll}"
-            deployRoot="${user.dir}/src"
-            logType="${env.SF_LOGDETAIL}"
+            deployRoot="${user.dir}/src"            
             testLevel="${sf.testLevel}" />
     </target>
     
@@ -279,8 +276,7 @@
             password="${sf.password}"
             serverurl="${sf.serverurl}"
             maxPoll="${sf.maxPoll}"
-            deployRoot="${user.dir}/src"
-            logType="${env.SF_LOGDETAIL}"
+            deployRoot="${user.dir}/src"            
             testLevel="${sf.testLevel}" >
             <runTest>AddEditLocationExtTest</runTest>
             <runTest>AddEditRetailerExtTest</runTest>
@@ -401,8 +397,7 @@
         password="${sf.tstpassword}"
         serverurl="${sf.tstserverurl}"
         maxPoll="${sf.maxPoll}"
-        deployRoot="${user.dir}/src"
-        logType="${env.SF_LOGDETAIL}"
+        deployRoot="${user.dir}/src"        
         ignoreWarnings="true"
         runallTests="false" />
     </target>
