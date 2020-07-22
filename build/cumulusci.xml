@@ -438,6 +438,7 @@ project.setProperty("downgradePackage", result);
                                   <equals arg1="${typename}" arg2="Report" />
                                   <contains string="${component_file_parent}" substring="__" />
                                   <equals arg1="${typename}" arg2="AuraDefinitionBundle" />
+                                  <equals arg1="${typename}" arg2="LightningComponentBundle" />
                                 </and>
                               </not>
                               <not><contains string="${parents_included}" substring=",${component_file_parent}," /></not>
@@ -458,7 +459,9 @@ project.setProperty("downgradePackage", result);
                             <else>
                               <if>
                                 <not>
-                                  <equals arg1="${typename}" arg2="AuraDefinitionBundle" />
+                                  <and><equals arg1="${typename}" arg2="AuraDefinitionBundle" />
+                                    <equals arg1="${typename}" arg2="LightningComponentBundle" /></and>
+                                  
                                 </not>
                                 <then>
                                   <echo file="@{xmlfile}" append="true">        &lt;members&gt;${component_file_parent}/${component}&lt;/members&gt;${line.separator}</echo>
