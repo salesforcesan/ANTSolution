@@ -9,7 +9,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/CROSSMARK-GIT/OneHub
+    working_directory: ~/salesforcesan/ANTSolution
     parallelism: 1
     # resource_class: large # Commented by san
     shell: /bin/bash --login
@@ -42,14 +42,14 @@ jobs:
     - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
     # This is based on your 1.0 configuration file or project settings
     - run:
-        working_directory: ~/CROSSMARK-GIT/OneHub
+        working_directory: ~/salesforcesan/ANTSolution
         command: 'echo ''America/Los_Angeles'' | sudo tee -a /etc/timezone; sudo dpkg-reconfigure
           -f noninteractive tzdata;'
     - run:
-        working_directory: ~/CROSSMARK-GIT/OneHub
+        working_directory: ~/salesforcesan/ANTSolution
         command: sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0/bin/java; sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0/bin/javac; echo -e "export JAVA_HOME=/usr/lib/jvm/jdk1.8.0" >> $BASH_ENV
     - run:
-        working_directory: ~/CROSSMARK-GIT/OneHub
+        working_directory: ~/salesforcesan/ANTSolution
         command: |-
           printf '127.0.0.1       circlehost' | sudo tee -a /etc/hosts
 

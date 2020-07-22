@@ -27,7 +27,7 @@ build notes (test)
 
 ## CI Environment Variable Setup for each developer (example given for branch `dev.dan`)
 
-https://circleci.com/gh/CROSSMARK-GIT/OneHub/edit#env-vars
+https://circleci.com/gh/salesforcesan/ANTSolution/edit#env-vars
 
 `DEV_DAN_USERNAME = dan@shopperevents.com.csxdans`
 
